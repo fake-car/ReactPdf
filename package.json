@@ -1,0 +1,22 @@
+{
+  "name": "reactPdf",
+  "version": "0.0.1",
+  "description": "Rendering PDF by pdf.js, including lazy loading and page jump",
+  "main": "dist/reactPdf.js",
+  "module": "dist/reactPdf.esm.js",
+  "unpkg": "dist/reactPdf.umd.js",
+  "authors": {
+    "name": "fake-car",
+    "email": "interlgy@hotmail.com"
+  },
+  "repository": "https://github.com/fake-car/ReactPdf/reactPdf",
+  "scripts": {
+    "dev": "umi doc dev",
+    "build": "umi lib build"
+  },
+  "devDependencies": {
+    "umi": "^2.0.0",
+    "umi-plugin-library": "^1.0.1-0"
+  },
+  "license": "MIT"
+}
