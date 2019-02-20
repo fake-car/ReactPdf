@@ -5,7 +5,7 @@ Rendering PDF by pdf.js, including lazy loading and page jump
 ## Usage
 
 ```sh
-umi block https://github.com/https://github.com/fake-car/ReactPdf/tree/master/reactPdf
+umi block https://github.com/fake-car/ReactPdf/tree/master/reactPdf
 ```
 
 ## LICENSE
