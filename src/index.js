@@ -14,11 +14,13 @@ class index extends Component {
     onPageChange: PropTypes.func, // calls when page changes
     onPdfLoaded: PropTypes.func,
     maxWidth: PropTypes.number, // max width of the viewport
+    worker: PropTypes.any // custom worker
   }
 
   static defaultProps = {
     url: '',
     maxWidth: 1100,
+    work: require('pdfjs-dist/build/pdf.worker.js'),
   }
 
   state = {
@@ -38,13 +40,14 @@ class index extends Component {
       url,
       onPdfLoaded,
       onPageChange,
-      maxWidth
+      maxWidth,
+      worker
     } = this.props
 
     if (!url) {
       return
     }
-    PdfJsLib.GlobalWorkerOptions.workerSrc = require('pdfjs-dist/build/pdf.worker.js')
+    PdfJsLib.GlobalWorkerOptions.workerSrc = worker
     PdfJsLib.getDocument(url)
     .then((pdf) => {
       const {
