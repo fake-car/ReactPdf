@@ -1,6 +1,6 @@
 {
-  "name": "reactPdf",
-  "version": "0.0.1",
+  "name": "fex-reactpdf",
+  "version": "0.0.2",
   "description": "Rendering PDF by pdf.js, including lazy loading and page jump",
   "main": "dist/reactPdf.js",
   "module": "dist/reactPdf.esm.js",

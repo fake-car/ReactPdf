@@ -7,24 +7,16 @@
   bottom: 0;
   background-color: #404040;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
   .pdfView {
     overflow: scroll;
-    height: 100%;
-    width: 100%;
-    &::-webkit-scrollbar {
-      width: 6px;
-    }
-    &::-webkit-scrollbar-thumb {
-      width: 6px;
-      border-radius: 19px;
-    }
-    &::-webkit-scrollbar-track {
-      border-radius: 5px;
-    }
+    flex: 1;
     .page {
-      .layer {
-
-      }
+      margin: 0 auto;
+    }
+    .page + .page {
+      margin-top: 8px;
     }
   }
 }
