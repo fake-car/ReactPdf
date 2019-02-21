@@ -1,6 +1,6 @@
 # @umi-material/reactPdf
 
-Rendering PDF by pdf.js, including lazy loading and page jump
+Rendering PDF by pdf.js, including lazy loading and page-jump
 
 ## Usage
 
