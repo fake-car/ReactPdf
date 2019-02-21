@@ -1,5 +1,5 @@
 {
-  "name": "fex-reactpdf",
+  "name": "react-better-pdf",
   "version": "0.0.2",
   "description": "Rendering PDF by pdf.js, including lazy loading and page jump",
   "main": "dist/reactPdf.js",
