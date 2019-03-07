@@ -155,7 +155,7 @@ class index extends Component {
       this.renderPdfByPageNum(pageNum + 1, pdf)
     })
   }
-
+  
   removeObserver () {
     const content = document.getElementById('pdfView')
     content.removeEventListener('scroll', null)
