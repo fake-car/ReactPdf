@@ -155,7 +155,7 @@ class index extends Component {
       this.renderPdfByPageNum(pageNum + 1, pdf)
     })
   }
-  
+
   removeObserver () {
     const content = document.getElementById('pdfView')
     content.removeEventListener('scroll', null)
@@ -220,12 +220,12 @@ class index extends Component {
   calculateScrollHeightByPageNum = (pageNum, topNum, content) => {
     console.log(topNum)
     let totalHeight = 0
-    for (let i = 0; i <= pageNum; i += 1) {
+    for (let i = 0; i < pageNum; i += 1) {
       let currentPageHeight = this.pagesData[i].singlePageHeight
       if (pageNum > 0 && (i != pageNum - 1)) {
         totalHeight += currentPageHeight
       } else {
-        totalHeight += currentPageHeight - topNum - content.clientHeight / 2
+        totalHeight += currentPageHeight - topNum + content.clientHeight / 2
       }
     }
     return totalHeight
